@@ -112,6 +112,10 @@ open class NovoPersonagem(
         this.GLOBAL_MSG_RESTO = msgResto
     }
 
+    fun recuperarr_msg_resto(msgResto : String){
+        this.GLOBAL_MSG_RESTO = msgResto
+    }
+
     fun aplicar_carisma(carisma :Carisma){
         this.GLOBAL_VALOR_CARISMA = carisma.recuperar_valor_input()
     }
