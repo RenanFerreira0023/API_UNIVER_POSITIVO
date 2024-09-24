@@ -78,7 +78,7 @@ open class NovoPersonagem(
         println("\n\nPersonagem criado com sucesso !")
         var jsonAtributosConcatenados = concatenar_atributos(jsonForca,jsonDestreza,jsonInteligencia,jsonCarisma,jsonConstituicao,jsonSabedoria)
         var jsonPersonagem = criar_json_personagem(nomePersonagem,valorXP,jsonAtributosConcatenados)
-        gravar_arquivo_local(jsonPersonagem,"dados_personagem.json")
+     //   gravar_arquivo_local(jsonPersonagem,"dados_personagem.json")
 
 
 

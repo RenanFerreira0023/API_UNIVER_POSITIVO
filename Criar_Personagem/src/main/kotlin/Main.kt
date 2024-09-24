@@ -7,6 +7,7 @@ import org.example.atributos.*
 
 
 var GLOBAL_UTIL: Constantes = Constantes()
+
 fun main() {
 
 
