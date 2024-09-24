@@ -6,4 +6,6 @@ interface Atributos {
     fun recuperar_valor_input() : Int
 
 
+
+
 }

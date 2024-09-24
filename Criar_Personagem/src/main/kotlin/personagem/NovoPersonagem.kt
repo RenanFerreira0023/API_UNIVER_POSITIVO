@@ -19,7 +19,7 @@ open class NovoPersonagem(
     var GLOBAL_VALOR_CARISMA = 0
     var GLOBAL_VALOR_CONSTITUICAO = 0
     var GLOBAL_VALOR_SABEDORIA = 0
-
+    var GLOBAL_MSG_RESTO = ""
     val VALOR_ATRIBUTO_INCIAL = 8
 
     var GLOBAL_UTIL : Constantes = Constantes()
@@ -106,6 +106,10 @@ open class NovoPersonagem(
 
 
 
+    }
+
+    fun persistir_msg_resto(msgResto : String){
+        this.GLOBAL_MSG_RESTO = msgResto
     }
 
     fun aplicar_carisma(carisma :Carisma){
