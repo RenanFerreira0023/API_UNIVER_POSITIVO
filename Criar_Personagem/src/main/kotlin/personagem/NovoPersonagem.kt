@@ -78,7 +78,7 @@ open class NovoPersonagem(
 
         println("\n\nPersonagem criado com sucesso !")
         var jsonAtributosConcatenados = concatenar_atributos(jsonForca,jsonDestreza,jsonInteligencia,jsonCarisma,jsonConstituicao,jsonSabedoria)
-        GLOBAL_JSON_TABELA = criar_json_personagem(nomePersonagem,valorXP,jsonAtributosConcatenados)
+        GLOBAL_JSON_TABELA = criar_json_personagem(nomePersonagem,valorXP,jsonAtributosConcatenados,objRaca.nome_raca())
      //   gravar_arquivo_local(jsonPersonagem,"dados_personagem.json")
 
 
@@ -142,8 +142,8 @@ open class NovoPersonagem(
     }
 
 
-    fun criar_json_personagem(nomePersonagem : String , valorXP :Int,jsonAtributos : String) : String{
-        return "{ \"nomePersonagem\" : \"$nomePersonagem\" , \"valorXP\": $valorXP , $jsonAtributos  }"
+    fun criar_json_personagem(nomePersonagem : String , valorXP :Int,jsonAtributos : String,nomeRaca : String) : String{
+        return "{ \"nomePersonagem\" : \"$nomePersonagem\" , \"valorXP\": $valorXP ,\"nomeRaca\": $nomeRaca , $jsonAtributos  }"
     }
 
 
