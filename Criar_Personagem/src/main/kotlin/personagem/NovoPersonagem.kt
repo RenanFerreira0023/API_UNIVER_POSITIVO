@@ -21,6 +21,7 @@ open class NovoPersonagem(
     var GLOBAL_VALOR_SABEDORIA = 0
     var GLOBAL_MSG_RESTO = ""
     val VALOR_ATRIBUTO_INCIAL = 8
+    var GLOBAL_JSON_TABELA = ""
 
     var GLOBAL_UTIL : Constantes = Constantes()
 
@@ -77,7 +78,7 @@ open class NovoPersonagem(
 
         println("\n\nPersonagem criado com sucesso !")
         var jsonAtributosConcatenados = concatenar_atributos(jsonForca,jsonDestreza,jsonInteligencia,jsonCarisma,jsonConstituicao,jsonSabedoria)
-        var jsonPersonagem = criar_json_personagem(nomePersonagem,valorXP,jsonAtributosConcatenados)
+        GLOBAL_JSON_TABELA = criar_json_personagem(nomePersonagem,valorXP,jsonAtributosConcatenados)
      //   gravar_arquivo_local(jsonPersonagem,"dados_personagem.json")
 
 
@@ -106,6 +107,11 @@ open class NovoPersonagem(
 
 
 
+    }
+
+    fun recuperar_json_dados() : String
+    {
+        return GLOBAL_JSON_TABELA
     }
 
     fun persistir_msg_resto(msgResto : String){
