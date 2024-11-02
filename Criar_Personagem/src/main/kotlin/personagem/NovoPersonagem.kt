@@ -143,7 +143,7 @@ open class NovoPersonagem(
 
 
     fun criar_json_personagem(nomePersonagem : String , valorXP :Int,jsonAtributos : String,nomeRaca : String) : String{
-        return "{ \"nomePersonagem\" : \"$nomePersonagem\" , \"valorXP\": $valorXP ,\"nomeRaca\": $nomeRaca , $jsonAtributos  }"
+        return "{ \"nomePersonagem\" : \"$nomePersonagem\" , \"valorXP\": $valorXP ,\"nomeRaca\": \"$nomeRaca\" , $jsonAtributos  }"
     }
 
 
